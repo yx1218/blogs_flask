@@ -1,0 +1,8 @@
+Dear {{ user.username }},
+Welcome to <b>Blogs</b>!
+To confirm your account please <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>
+Alternatively, you can paste the following link in your browser's bar:
+{{ url_for('auth.confirm', token=token, _external=True) }}
+Sincerely
+The Blogs Team
+<small>Note: replies to this email address are not monitored</small>
